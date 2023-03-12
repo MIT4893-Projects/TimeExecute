@@ -15,7 +15,7 @@ namespace TimeExecute.Components.Parsers
         public static bool IsOptionParameter(string parameter)
         {
             // An option parameter starts with '-' character.
-            string pattern = "^-||^--";
+            string pattern = "^[-]{1,2}.{1,}";
             return Regex.Match(parameter, pattern).Success;
         }
     }

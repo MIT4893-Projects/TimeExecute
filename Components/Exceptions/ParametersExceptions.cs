@@ -15,4 +15,11 @@ namespace TimeExecute.Components.Exceptions
         public NoCommandParameterToExecuteException(
             string message = "There aren't any file paths or commands for timing.") : base(message) { }
     }
+
+    class NoCommandArgumentException : Exception
+    {
+        public NoCommandArgumentException(
+            string message = "There aren't any arguments after -a argument " +
+                             "which uses for passing arguments to command.") : base(message) { }
+    }
 }

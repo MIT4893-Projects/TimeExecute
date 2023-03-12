@@ -32,6 +32,17 @@ namespace TimeExecute
                 Thread.Sleep(2000);
                 Console.WriteLine(TimeSpanConverter.ToSecond(ExecuteTimer.StopTimer()));
             }
+
+            Timing();
+        }
+
+        private void Timing()
+        {
+            ExecuteTimer.StartTimer();
+            ParametersHandler.StartCommand().Wait();
+            TimeSpan executeTime = ExecuteTimer.StopTimer();
+
+            ConsoleLogger.ShowMessage($"Execution time: {TimeSpanConverter.ToSecond(executeTime)}s");
         }
     }
 }

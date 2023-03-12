@@ -63,13 +63,24 @@
         }
 
         /// <summary>
-        /// Display a warning message into the prompt with specific format
+        /// Display a warning message into the prompt with specific format.
         /// </summary>
         /// <param name="message">Warning message to display.</param>
         public static void ShowWarning(string message)
         {
             SetForegroundColor(ConsoleColor.Yellow);
             Console.WriteLine($"WARNING: {message}");
+            ResetColor();
+        }
+        
+        /// <summary>
+        /// Display a normal message into the prompt with specific format.
+        /// </summary>
+        /// <param name="message"></param>
+        public static void ShowMessage(string message)
+        {
+            SetForegroundColor(ConsoleColor.Green);
+            Console.WriteLine(message);
             ResetColor();
         }
     }
