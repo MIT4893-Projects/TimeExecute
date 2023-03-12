@@ -28,7 +28,7 @@ namespace TimeExecute
                     "You're running a debug session with sleep time: 2 second.";
                 ConsoleLogger.ShowWarning(debugWarningMessage);
 
-                ExecuteTimer?.StartTimer();
+                ExecuteTimer.StartTimer();
                 Thread.Sleep(2000);
                 Console.WriteLine(TimeSpanConverter.ToSecond(ExecuteTimer.StopTimer()));
             }
