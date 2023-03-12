@@ -1,8 +1,10 @@
-﻿using TimeExecute.Components.Handlers;
-using TimeExecute.Components;
+﻿using TimeExecute.Components;
 
 namespace TimeExecute
 {
+    /// <summary>
+    /// Main class of application.
+    /// </summary>
     class Application
     {
         /// <summary>

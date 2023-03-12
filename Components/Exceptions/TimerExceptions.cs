@@ -1,25 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TimeExecute.Components.Exceptions
+﻿namespace TimeExecute.Components.Exceptions
 {
+    /// <summary>
+    /// Occurs when stop Timer without started it.
+    /// </summary>
     class UnstartedTimerException : Exception
     {
         /// <summary>
-        /// This Exception occurs when stop Timer without started it.
+        /// Initialize a new instance of UnstartedTimerException.
         /// </summary>
+        /// <param name="message">Exception's message.</param>
         public UnstartedTimerException(
             string message = "The timer haven't start yet.") : base(message) { }
     }
 
+    /// <summary>
+    /// Occurs when start Timer when it already started.
+    /// </summary>
     class StartedTimerException : Exception
     {
         /// <summary>
-        /// This Exception occurs when start Timer whether it have been started.
+        /// Initialize a new instance of UnstartedTimerException.
         /// </summary>
+        /// <param name="message">Exception's message.</param>
         public StartedTimerException(
             string message = "The timer already started.") : base(message) { }
     }

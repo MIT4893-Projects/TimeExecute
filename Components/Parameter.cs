@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TimeExecute.Components.Parsers;
+﻿using TimeExecute.Components.Parsers;
 
 namespace TimeExecute.Components
 {
